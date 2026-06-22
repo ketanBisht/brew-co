@@ -206,12 +206,12 @@ export default function BrewedCoPage() {
             {CATS.map(c => (
               <button key={c.key} onClick={() => setActiveCat(c.key)} style={{
                 display: "flex", alignItems: "center", gap: "0.4rem",
-                padding: "0.5rem 1.125rem", borderRadius: 999, border: "none",
+                padding: "0.5rem 1.125rem", borderRadius: 999,
                 background: activeCat === c.key ? "var(--espresso)" : "#fff",
                 color: activeCat === c.key ? "#fff" : "var(--text-secondary)",
                 fontSize: "0.83rem", fontWeight: 700, cursor: "pointer",
                 fontFamily: "var(--font-body)", transition: "all 0.18s",
-                border_: activeCat === c.key ? "none" : "1px solid var(--border)",
+                border: activeCat === c.key ? "none" : "1px solid var(--border)",
                 boxShadow: activeCat === c.key ? "none" : "0 1px 4px rgba(28,18,10,0.06)",
               }}>
                 <span>{c.emoji}</span> {c.label}
